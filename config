@@ -185,6 +185,10 @@ bar {
         status_command i3status
 }
 
+# Windows configurations
+for_window [class="Spotify"] move window to workspace 8
+
 # Wallpaper
 #exec --no-startup-id feh --bg-scale /path/to/image.jpg
+
 
