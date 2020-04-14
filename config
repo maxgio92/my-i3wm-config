@@ -194,6 +194,7 @@ exec --no-startup-id xrandr --output eDP-1 --mode 1680x1050 # HiDPI primary outp
 
 # Windows
 for_window [class="Terminator"] move window to workspace number $ws1
+for_window [class="Chromium"] move window to workspace number $ws2
 for_window [class="Slack"] move window to workspace number $ws3
 for_window [class="Spotify"] move window to workspace number $ws8
 
