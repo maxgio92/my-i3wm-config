@@ -186,13 +186,16 @@ bindsym $mod+z move workspace to output left
 # finds out, if available)
 bar {
         status_command i3status
+        position top
 }
 
 # Displays
 exec --no-startup-id xrandr --output eDP-1 --mode 1680x1050 # HiDPI primary output
 
 # Windows
+for_window [class="Terminator"] move window to workspace number $ws1
+for_window [class="Slack"] move window to workspace number $ws3
 for_window [class="Spotify"] move window to workspace number $ws8
 
 # Wallpaper
-exec --no-startup-id feh --bg-scale ~/Images/wallpapers/marmolada.jpg
+exec --no-startup-id feh --bg-scale ~/Images/wallpapers/archlinux_dark_wood.jpg
